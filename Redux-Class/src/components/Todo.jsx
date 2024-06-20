@@ -23,12 +23,12 @@ export default function Todo() {
       <ul>
         {todos.map((todo) => (
           <li key={todo.id}>
-            {/* <span
+            <span
               style={{ textDecoration: todo.completed ? "line-through" : "" }}
             >
               {todo.task}
-            </span> */}
-             {todo.task}
+            </span>
+            {/* {todo.task} */}
             <button onClick={() => deleteHandle(todo.id)}>Delete</button>
             <button onClick={() => markAsDoneHandle(todo.id)}>Mark</button>
           </li>
